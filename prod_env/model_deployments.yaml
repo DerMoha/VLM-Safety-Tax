@@ -1,0 +1,131 @@
+model_deployments:
+  - name: vllm/qwen2-vl-2b-grpo-8k
+    model_name: lmms-lab/Qwen2-VL-2B-GRPO-8k
+    tokenizer_name: lmms-lab/Qwen2-VL-2B-GRPO-8k
+    max_sequence_length: 8192
+    client_spec:
+      class_name: "helm.clients.openai_client.OpenAIClient"
+      args:
+        base_url: http://localhost:9001/v1/
+        api_key: "EMPTY"
+  - name: vllm/qwen2-vl-7b-grpo-8k
+    model_name: lmms-lab/Qwen2-VL-7B-GRPO-8k
+    tokenizer_name: lmms-lab/Qwen2-VL-7B-GRPO-8k
+    max_sequence_length: 8192
+    client_spec:
+      class_name: "helm.clients.openai_client.OpenAIClient"
+      args:
+        base_url: http://localhost:9001/v1/
+        api_key: "EMPTY"
+  - name: vllm/qwen2-vl-2b-instruct
+    model_name: Qwen/Qwen2-VL-2B-Instruct
+    tokenizer_name: Qwen/Qwen2-VL-2B-Instruct
+    max_sequence_length: 8192
+    client_spec:
+      class_name: "helm.clients.openai_client.OpenAIClient"
+      args:
+        base_url: http://localhost:9001/v1/
+        api_key: "EMPTY"
+  - name: vllm/qwen2-vl-7b-instruct
+    model_name: Qwen/Qwen2-VL-7B-Instruct
+    tokenizer_name: Qwen/Qwen2-VL-7B-Instruct
+    max_sequence_length: 8192
+    client_spec:
+      class_name: "helm.clients.openai_client.OpenAIClient"
+      args:
+        base_url: http://localhost:9001/v1/
+        api_key: "EMPTY"
+  - name: vllm/qwen2-vl-7b-vlguard
+    model_name: Foreshhh/Qwen2-VL-7B-VLGuard
+    tokenizer_name: Foreshhh/Qwen2-VL-7B-VLGuard
+    max_sequence_length: 8192
+    client_spec:
+      class_name: "helm.clients.openai_client.OpenAIClient"
+      args:
+        base_url: http://localhost:9001/v1/
+        api_key: "EMPTY"
+  - name: vllm/qwen2-vl-7b-saferlhf
+    model_name: Foreshhh/Qwen2-VL-7B-SafeRLHF
+    tokenizer_name: Foreshhh/Qwen2-VL-7B-SafeRLHF
+    max_sequence_length: 8192
+    client_spec:
+      class_name: "helm.clients.openai_client.OpenAIClient"
+      args:
+        base_url: http://localhost:9001/v1/
+        api_key: "EMPTY"
+  - name: vllm/mm-eureka-qwen2-7b
+    model_name: FanqingM/MM-Eureka-Qwen-7B
+    tokenizer_name: FanqingM/MM-Eureka-Qwen-7B
+    max_sequence_length: 8192
+    client_spec:
+      class_name: "helm.clients.openai_client.OpenAIClient"
+      args:
+        base_url: http://localhost:9001/v1/
+        api_key: "EMPTY"
+  - name: Qwen2.5-VL-7B-Instruct
+    model_name: Qwen/Qwen2.5-VL-7B-Instruct
+    tokenizer_name: Qwen/Qwen2.5-VL-7B-Instruct
+    max_sequence_length: 8192
+    client_spec:
+      class_name: "helm.clients.openai_client.OpenAIClient"
+      args:
+        base_url: http://localhost:9001/v1/
+        api_key: "EMPTY"
+  - name: Osilly/Vision-R1-7B
+    model_name: Osilly/Vision-R1-7B
+    tokenizer_name: Osilly/Vision-R1-7B
+    max_sequence_length: 8192
+    client_spec:
+      class_name: "helm.clients.openai_client.OpenAIClient"
+      args:
+        base_url: http://localhost:9001/v1/
+        api_key: "EMPTY"
+        output_processor: "helm.benchmark.metrics.output_processors.remove_r1_thinking_and_answer_tags"
+  - name: vllm/r1-onevision-7b
+    model_name: Fancy-MLLM/R1-Onevision-7B
+    tokenizer_name: Fancy-MLLM/R1-Onevision-7B
+    max_sequence_length: 10240
+    client_spec:
+      class_name: "helm.clients.openai_client.OpenAIClient"
+      args:
+        base_url: http://localhost:9001/v1/
+        api_key: "EMPTY"
+        output_processor: "helm.benchmark.metrics.output_processors.remove_r1_thinking_and_answer_tags"
+  - name: vllm/vision-grpo-qwen-2.5-vl-7b
+    model_name: cemoss17/vision-grpo-qwen-2.5-vl-7b
+    tokenizer_name: cemoss17/vision-grpo-qwen-2.5-vl-7b
+    max_sequence_length: 10240
+    client_spec:
+      class_name: "helm.clients.openai_client.OpenAIClient"
+      args:
+        base_url: "http://localhost:9001/v1/"
+        api_key: "EMPTY"
+  - name: vllm/LLaVA-Critic-R1-7B
+    model_name: lmms-lab/LLaVA-Critic-R1-7B
+    tokenizer_name: lmms-lab/LLaVA-Critic-R1-7B
+    max_sequence_length: 10240
+    client_spec:
+      class_name: "helm.clients.openai_client.OpenAIClient"
+      args:
+        base_url: http://localhost:9001/v1/
+        api_key: "EMPTY"
+        output_processor: "helm.benchmark.metrics.output_processors.remove_r1_thinking_and_answer_tags"
+  - name: vllm/LLaVA-Critic-R1-7B-Plus-Qwen
+    model_name: lmms-lab/LLaVA-Critic-R1-7B-Plus-Qwen
+    tokenizer_name: lmms-lab/LLaVA-Critic-R1-7B-Plus-Qwen
+    max_sequence_length: 10240
+    client_spec:
+      class_name: "helm.clients.openai_client.OpenAIClient"
+      args:
+        base_url: http://localhost:9001/v1/
+        api_key: "EMPTY"
+        output_processor: "helm.benchmark.metrics.output_processors.remove_r1_thinking_and_answer_tags"
+  - name: vllm/Qwen2.5VL-7b-RLCS
+    model_name: WaltonFuture/Qwen2.5VL-7b-RLCS
+    tokenizer_name: WaltonFuture/Qwen2.5VL-7b-RLCS
+    max_sequence_length: 10240
+    client_spec:
+      class_name: "helm.clients.openai_client.OpenAIClient"
+      args:
+        base_url: "http://localhost:9001/v1/"
+        api_key: "EMPTY"

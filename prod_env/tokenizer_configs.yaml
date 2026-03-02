@@ -1,0 +1,94 @@
+tokenizer_configs:
+- name: lmms-lab/Qwen2-VL-2B-GRPO-8k
+  tokenizer_spec:
+    class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+    args:
+      pretrained_model_name_or_path: lmms-lab/Qwen2-VL-2B-GRPO-8k
+  end_of_text_token: "<|im_end|>"
+  prefix_token: "<|im_start|>"   
+- name: lmms-lab/Qwen2-VL-7B-GRPO-8k
+  tokenizer_spec:
+    class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+    args:
+      pretrained_model_name_or_path: lmms-lab/Qwen2-VL-7B-GRPO-8k
+  end_of_text_token: "<|im_end|>"
+  prefix_token: "<|im_start|>"   
+- name: Qwen/Qwen2-VL-2B-Instruct
+  tokenizer_spec:
+    class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+    args:
+      pretrained_model_name_or_path: "Qwen/Qwen2-VL-2B-Instruct"
+- name: Qwen/Qwen2-VL-7B-Instruct
+  tokenizer_spec:
+    class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+    args:
+      pretrained_model_name_or_path: "Qwen/Qwen2-VL-7B-Instruct"
+- name: Foreshhh/Qwen2-VL-7B-VLGuard
+  tokenizer_spec:
+    class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+    args:
+      pretrained_model_name_or_path: "Foreshhh/Qwen2-VL-7B-VLGuard"
+- name: Foreshhh/Qwen2-VL-7B-SafeRLHF
+  tokenizer_spec:
+    class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+    args:
+      pretrained_model_name_or_path: "Foreshhh/Qwen2-VL-7B-SafeRLHF"
+- name: FanqingM/MM-Eureka-Qwen-7B
+  tokenizer_spec:
+    class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+    args:
+      pretrained_model_name_or_path: "FanqingM/MM-Eureka-Qwen-7B"
+- name: Osilly/Vision-R1-7B
+  tokenizer_spec:
+    class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+    args:
+      pretrained_model_name_or_path: "Osilly/Vision-R1-7B"
+  end_of_text_token: "<|im_end|>"
+  prefix_token: "<|im_start|>"
+- name: fancy-mllm/R1-Onevision-7B
+  tokenizer_spec:
+    class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+    args:
+      pretrained_model_name_or_path: "Fancy-MLLM/R1-Onevision-7B"
+  end_of_text_token: "<|im_end|>"
+  prefix_token: "<|endoftext|>"
+- name: Qwen/Qwen2.5-VL-7B-Instruct
+  tokenizer_spec:
+    class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+    args:
+      pretrained_model_name_or_path: "Qwen/Qwen2.5-VL-7B-Instruct"
+  end_of_text_token: "<|im_end|>"
+  prefix_token: "<|endoftext|>"
+- name: Fancy-MLLM/R1-Onevision-7B
+  tokenizer_spec:
+    class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+    args:
+      pretrained_model_name_or_path: "Fancy-MLLM/R1-Onevision-7B"
+- name: cemoss17/vision-grpo-qwen-2.5-vl-7b
+  tokenizer_spec:
+    class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+    args:
+      pretrained_model_name_or_path: "cemoss17/vision-grpo-qwen-2.5-vl-7b"
+  end_of_text_token: "<|im_end|>"
+  prefix_token: "<|im_start|>"
+- name: lmms-lab/LLaVA-Critic-R1-7B
+  tokenizer_spec:
+    class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+    args:
+      pretrained_model_name_or_path: "lmms-lab/LLaVA-Critic-R1-7B"
+  end_of_text_token: "<|im_end|>"
+  prefix_token: "<|im_start|>"
+- name: lmms-lab/LLaVA-Critic-R1-7B-Plus-Qwen
+  tokenizer_spec:
+    class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+    args:
+      pretrained_model_name_or_path: "lmms-lab/LLaVA-Critic-R1-7B-Plus-Qwen"
+  end_of_text_token: "<|im_end|>"
+  prefix_token: "<|im_start|>"
+- name: WaltonFuture/Qwen2.5VL-7b-RLCS
+  tokenizer_spec:
+    class_name: "helm.tokenizers.huggingface_tokenizer.HuggingFaceTokenizer"
+    args:
+      pretrained_model_name_or_path: "WaltonFuture/Qwen2.5VL-7b-RLCS"
+  end_of_text_token: "<|im_end|>"
+  prefix_token: "<|im_start|>"

@@ -1,0 +1,20 @@
+# Python
+vllm_venv/
+vhelm_venv/
+__pycache__/
+*.pyc
+
+# HELM output
+benchmark_output/
+prod_env/cache/
+prod_env/accounts.sqlite
+
+# Credentials -- never commit
+prod_env/credentials.conf
+
+# Logs and results
+logs/
+*.log
+
+# macOS
+.DS_Store
